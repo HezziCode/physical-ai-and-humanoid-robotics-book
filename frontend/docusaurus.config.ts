@@ -13,23 +13,19 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+future: {
+  v4: true,
+},
+
 
   // Set the production url of your site here
   url: 'https://HezziCode.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hackathon-book/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'HezziCode', // Usually your GitHub org/user name.
-  projectName: 'hackathon-book', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
-
+  baseUrl: '/physical-ai-and-humanoid-robotics-book/',   // ya '/hackathon-book/'
+  organizationName: 'HezziCode',
+  projectName: 'physical-ai-and-humanoid-robotics-book',
+  trailingSlash: false,
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -46,6 +42,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           path: './docs',
           routeBasePath: '/',
+          onBrokenLinks: 'ignore',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -107,7 +104,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/index',
             },
           ],
         },
