@@ -1,0 +1,81 @@
+---
+id: index
+sidebar_label: Welcome
+sidebar_position: 1
+---
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRobot, faMicrochip, faBrain } from '@fortawesome/free-solid-svg-icons';
+import styles from '@site/src/pages/index.module.css';
+import Link from '@docusaurus/Link';
+
+<div className={styles.heroBanner}>
+  <div className="container text--center">
+    <h1 className="hero__title">Physical AI & Humanoid Robotics</h1>
+    <p className="hero__subtitle">From Digital Intelligence to Embodied Agents</p>
+    <img src="/img/humanoid-robot-jetson-ros-placeholder.jpg" alt="Humanoid Robot or Jetson + ROS Setup" className={styles.heroImage} />
+  </div>
+</div>
+
+<div className={styles.section}>
+  <div className="container">
+    <div className="row">
+      <div className="col col--4">
+        <div className="text--center padding-horiz--md">
+          <FontAwesomeIcon icon={faRobot} size="3x" color="var(--ifm-color-primary)" />
+          <h3>ROS 2 Integration</h3>
+          <p>Master the Robot Operating System 2 for robust robotic control.</p>
+        </div>
+      </div>
+      <div className="col col--4">
+        <div className="text--center padding-horiz--md">
+          <FontAwesomeIcon icon={faMicrochip} size="3x" color="var(--ifm-color-primary)" />
+          <h3>NVIDIA Isaac Platform</h3>
+          <p>Learn to leverage NVIDIA's powerful AI platform for robotic intelligence.</p>
+        </div>
+      </div>
+      <div className="col col--4">
+        <div className="text--center padding-horiz--md">
+          <FontAwesomeIcon icon={faBrain} size="3x" color="var(--ifm-color-primary)" />
+          <h3>Vision-Language-Action Models</h3>
+          <p>Explore multimodal AI for advanced robot perception and decision-making.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className={styles.section}>
+  <div className="container">
+    <div className="row">
+      <div className="col col--12">
+        <h2>Course Overview</h2>
+        <p>This textbook provides a comprehensive guide to Physical AI and Humanoid Robotics, bridging the gap between theoretical AI concepts and their real-world embodiment. You will learn to design, program, and deploy intelligent robotic systems capable of complex interactions in dynamic environments.</p>
+        <h3>Key Learning Outcomes:</h3>
+        <ul>
+          <li>Understand the fundamentals of embodied intelligence and physical AI.</li>
+          <li>Master ROS 2 for robotic software development, including navigation, manipulation, and perception.</li>
+          <li>Utilize NVIDIA Isaac SDK and Isaac Sim for simulation and real-world deployment.</li>
+          <li>Implement Vision-Language-Action (VLA) models for advanced cognitive robotics.</li>
+          <li>Explore humanoid kinematics, bipedal locomotion, and dexterous manipulation.</li>
+          <li>Apply sim-to-real transfer techniques to bridge the reality gap.</li>
+          <li>Develop conversational robotics for natural human-robot interaction.</li>
+        </ul>
+        <h2>Hardware Requirements:</h2>
+        <p>While theoretical concepts can be understood without hardware, practical exercises benefit from:</p>
+        <ul>
+          <li>NVIDIA Jetson Development Kit (e.g., Jetson Orin Nano, AGX Orin) or a capable GPU workstation.</li>
+          <li>Compatible robotic platform (e.g., a mobile robot with ROS 2 support, or a small humanoid robot kit).</li>
+          <li>Depth camera (e.g., Intel RealSense, Azure Kinect) for perception tasks.</li>
+        </ul>
+        <div className="text--center" style={{ marginTop: '2rem' }}>
+          <Link
+            className="button button--primary button--lg"
+            to="/chapters/chapter-1">
+            Start Learning →
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+.authContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.authContainer h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--ifm-color-primary);
+}
+
+.authForm .formGroup {
+  margin-bottom: 20px;
+}
+
+.authForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--ifm-font-color-base);
+}
+
+.authForm input[type="text"],
+.authForm input[type="password"],
+.authForm select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--ifm-contents-border-color);
+  border-radius: 6px;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 16px;
+}
+
+.authForm input[type="text"]:focus,
+.authForm input[type="password"]:focus,
+.authForm select:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.authButton {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.successMessage {
+  color: var(--ifm-color-success);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.errorMessage {
+  color: var(--ifm-color-danger);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}

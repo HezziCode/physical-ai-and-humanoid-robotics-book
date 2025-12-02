@@ -1,0 +1,76 @@
+.chatbotContainer {
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* Adjust as needed */
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: var(--ifm-border-radius);
+  overflow: hidden;
+  font-family: var(--ifm-font-family-base);
+  background-color: var(--ifm-color-background-surface);
+}
+
+.messagesContainer {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: var(--ifm-background-color);
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: var(--ifm-color-primary-lighter);
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 2px;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+  margin-right: auto;
+  border-bottom-left-radius: 2px;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+.inputField {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-border-radius);
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.sendButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--ifm-border-radius);
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sendButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}

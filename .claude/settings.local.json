@@ -3,13 +3,33 @@
     "allow": [
       "Bash(mkdir:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1:*)",
+      "Bash(.specify/scripts/bash/create-phr.sh:*)",
+      "Bash(npx create-docusaurus@latest:*)",
+      "Bash(cd:*)",
+      "Bash(rm:*)",
+      "Bash(npm start)",
+      "Bash(..venvScriptsactivate:*)",
+      "Bash(uv add:*)",
+      "Bash(uv init:*)",
+      "Bash(uvicorn:*)",
+      "Bash(mv:*)",
+      "Bash(npm run write-translations)",
+      "Bash(npm install)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1:*)",
+      "Bash(npm run clear)",
+      "Bash(npm start:*)",
+      "Bash(npm run swizzle:*)",
+      "Bash(taskkill:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": []
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "github-server"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }

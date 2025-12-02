@@ -1,0 +1,86 @@
+.authControls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.authControls button {
+  padding: 10px 15px;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.authControls button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modalContent {
+  background-color: var(--ifm-background-color);
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+}
+
+.closeButton:hover {
+  color: var(--ifm-color-primary);
+}
+
+.authToggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggleButton {
+  padding: 10px 20px;
+  border: 1px solid var(--ifm-color-primary);
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggleButton:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.toggleButton:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.toggleButton.active {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
