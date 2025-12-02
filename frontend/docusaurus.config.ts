@@ -42,7 +42,6 @@ future: {
           sidebarPath: './sidebars.ts',
           path: './docs',
           routeBasePath: '/',
-          onBrokenLinks: 'ignore',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
