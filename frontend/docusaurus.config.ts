@@ -74,6 +74,7 @@ future: {
     },
     navbar: {
       title: 'AI Book',
+      to: '/',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
