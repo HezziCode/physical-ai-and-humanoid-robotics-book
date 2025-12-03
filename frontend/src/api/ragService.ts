@@ -10,13 +10,12 @@ export interface RagQueryResponse {
 }
 
 // SABSE SAFE WAY — direct window object se padho (Docusaurus 3 mein 100% kaam karta hai)
-const API_BASE_URL = 
-  (window as any).__DOCUSUARUS_CONFIG__?.customFields?.API_BASE_URL ||
-  "http://localhost:8000/api";
-
-export const queryRag = async (request: RagQueryRequest): Promise<RagQueryResponse> => {
+export const queryRag = async (
+  request: RagQueryRequest,
+  apiBaseUrl: string = "http://localhost:8000/api"
+): Promise<RagQueryResponse> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/rag/query`, {
+    const response = await fetch(`${apiBaseUrl}/rag/query`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(request),

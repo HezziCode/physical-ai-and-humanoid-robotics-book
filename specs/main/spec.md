@@ -5,6 +5,13 @@ This project aims to create the official AI-Native Textbook for an upcoming Phys
 
 ## Mandatory Features (100 points)
 1.  **Docusaurus 3 Site with GitHub Pages Deployment:** A modern, static website generated using Docusaurus 3 (classic template, TypeScript) and deployed on GitHub Pages.
+
+### Clarifications
+#### Session 2025-12-03
+- Q: What was the exact error message or a description of the issue you encountered when trying to deploy to GitHub Pages? → A: Build failure
+- Q: Please provide the exact error message or a detailed description of the build failure you encountered when deploying to GitHub Pages. → A: The build failed with 'ReferenceError: window is not defined' and 'Error: These field(s) ("future.experimental_ssr","future.unstable_clientOnlyComponents",) are not recognized in docusaurus.config.ts.' errors.
+- Q: What was the exact error message or a description of the issue you encountered when trying to deploy to GitHub Pages? → A: The deployment failed with 'Error: Please set the GIT_USER environment variable, or explicitly specify USE_SSH instead!' errors.
+- Q: To resolve the 'GIT_USER environment variable' error, how would you like to configure authentication for GitHub Pages deployment? → A: Set GIT_USER environment variable. User confirmed setting GIT_USER="HezziCode <huzaifasys@gmail.com>".
 2.  **Full Book in MDX with 10 Chapters:** The entire textbook content will be written in MDX format, encompassing the 10 exact chapters specified in the constitution.
 3.  **Embedded RAG Chatbot:** An intelligent RAG (Retrieval-Augmented Generation) chatbot embedded on every page, capable of answering questions from the entire book content or from user-selected text. This will use the OpenAI ChatKit Python SDK.
 4.  **FastAPI + Qdrant + Neon Backend:** The backend services will be powered by FastAPI (Python 3.11+), utilizing Qdrant Cloud (free tier) as the vector database and Neon Serverless Postgres for relational data.

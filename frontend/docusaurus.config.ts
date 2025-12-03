@@ -76,7 +76,7 @@ future: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'AI Book',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
