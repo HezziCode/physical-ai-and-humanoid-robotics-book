@@ -23,7 +23,9 @@
       "Bash(npm run swizzle:*)",
       "Bash(taskkill:*)",
       "Bash(netstat:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(npx kill-port:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
