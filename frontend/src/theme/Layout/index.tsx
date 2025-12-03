@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme-original/Layout';
-import Chatbot from '@site/src/components/Chatbot';
 import SignUpForm from '@site/src/components/SignUpForm';
 import SignInForm from '@site/src/components/SignInForm';
 import styles from './AuthModal.module.css'; // We will create this CSS module next
@@ -30,7 +29,6 @@ export default function LayoutWrapper(props) {
   return (
     <>
       <Layout {...props} />
-      <Chatbot />
 
       <div className={styles.authControls}>
         {userToken ? (

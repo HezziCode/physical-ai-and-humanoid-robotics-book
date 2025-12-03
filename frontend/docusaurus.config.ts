@@ -4,9 +4,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
 
-  customFields: {
-    API_BASE_URL: "http://localhost:8000/api",  
-  },
   
   title: 'Physical AI & Humanoid Robotics – An AI-Native Textbook',
   tagline: 'The Future of Physical AI, Embodied Intelligence, and Humanoid Robotics',
