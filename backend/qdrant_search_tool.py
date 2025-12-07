@@ -30,7 +30,7 @@ def qdrant_search_tool(query: str) -> str:
 
         # Search in Qdrant
         search_result = qdrant_client.search(
-            collection_name="physical_ai_book",  # Using the collection name from index-book.py
+            collection_name="physical_ai_book",  # Using the collection name from index_book.py
             query_vector=query_embedding,
             limit=5,  # Retrieve top 5 relevant documents as specified
             with_payload=True
