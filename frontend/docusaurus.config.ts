@@ -5,9 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
 
   
-  title: 'Physical AI & Humanoid Robotics – An AI-Native Textbook',
+  title: 'ROBOTICS ERA',
   tagline: 'The Future of Physical AI, Embodied Intelligence, and Humanoid Robotics',
-  favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
 future: {
@@ -26,10 +25,11 @@ future: {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ur'],
-  },
+i18n: {
+  defaultLocale: 'en',
+  locales: ['en', 'ur'],
+  path: 'i18n',
+},
 
   presets: [
     [
@@ -38,7 +38,7 @@ future: {
         docs: {
           sidebarPath: './sidebars.ts',
           path: './docs',
-          routeBasePath: '/',
+          routeBasePath: 'docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -70,21 +70,21 @@ future: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
+      defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'AI Book',
-      to: '/',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'ROBOTICS ERA',
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Chapters',
+          label: 'Book',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           href: 'https://github.com/HezziCode/physical-ai-and-humanoid-robotics-book',
@@ -92,52 +92,61 @@ future: {
           position: 'right',
         },
       ],
+      hideOnScroll: false,
     },
-    footer: {
-      style: 'dark',
-      links: [
+footer: {
+
+  links: [
+    {
+      title: 'Learn',
+      items: [
+        { label: 'Start Your Journey', to: '/physical-ai-and-humanoid-robotics-book/docs' },
+        { label: 'Full Curriculum', to: '/physical-ai-and-humanoid-robotics-book/docs' },
+        { label: 'Learning Path', to: '/physical-ai-and-humanoid-robotics-book/docs' },
+      ],
+    },
+    {
+      title: 'Community',
+      items: [
+        { label: 'YouTube', href: 'https://www.youtube.com/@Huzaifasys' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/huzaifasys/' },
+        { label: 'Instagram', href: 'https://www.instagram.com/huzaifasys' },
+        { label: 'Facebook', href: 'https://www.facebook.com/huzaifasys' },
+      ],
+    },
+    {
+      title: 'Resources',
+      items: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/index',
-            },
-          ],
+          label: 'GitHub Repository',
+          href: 'https://github.com/HezziCode/physical-ai-and-humanoid-robotics-book',
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
+          label: 'AI Native Specification',
+          href: 'https://github.com/HezziCode/physical-ai-and-humanoid-robotics-book',
         },
         {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          label: 'Example Projects',
+          href: 'https://github.com/HezziCode/physical-ai-and-humanoid-robotics-book',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
+    {
+      title: 'About',
+      items: [
+        {
+          label: 'HezziCode',
+          href: 'https://github.com/HezziCode/physical-ai-and-humanoid-robotics-book',
+        },
+        {
+          label: 'Our Mission',
+          href: 'https://github.com/HezziCode/physical-ai-and-humanoid-robotics-book',
+        },
+      ],
+    },
+  ],
+  copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built by Huzaifa.`,
+},
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

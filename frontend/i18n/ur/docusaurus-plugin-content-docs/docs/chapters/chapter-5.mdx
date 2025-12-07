@@ -1,0 +1,136 @@
+---
+id: chapter-5
+sidebar_label: 5. ویژن-زبان-عمل (VLA) ماڈلز
+sidebar_position: 6
+---
+
+import Admonition from '@theme/Admonition';
+
+# باب 5: ویژن-زبان-عمل (VLA) ماڈلز
+
+روبوٹس کو انسانی دنیا کو صحیح معنوں میں سمجھنے اور اس کے ساتھ تعامل کرنے کے قابل بنانے کے لیے، انہیں متعدد طریقوں سے معلومات پر کارروائی کرنے کی ضرورت ہے – خاص طور پر وژن اور زبان سے – اور اس سمجھ کو جسمانی اعمال میں تبدیل کرنا۔ یہ باب ویژن-زبان-عمل (VLA) ماڈلز کو متعارف کراتا ہے، ایک جدید نقطہ نظر جو زیادہ ذہین اور موافق روبوٹس کے لیے تصور، ادراک، اور عمل کو مربوط کرتا ہے۔
+
+## ملٹی موڈل AI کا عروج
+
+روایتی AI ماڈلز اکثر ایک ہی طریقہ کار میں مہارت رکھتے ہیں، جیسے تصویر کی شناخت کے لیے کمپیوٹر وژن یا متن کو سمجھنے کے لیے قدرتی زبان کی پروسیسنگ۔ تاہم، حقیقی دنیا فطری طور پر ملٹی موڈل ہے۔ VLA ماڈلز کا مقصد ان طریقوں کو جوڑنا ہے، جس سے روبوٹس کو یہ کرنے کی اجازت ملتی ہے:
+
+-   **سمجھنا**: بصری مناظر اور اشیاء کو سمجھنا۔
+-   **استدلال کرنا**: قدرتی زبان کے کمانڈز اور سوالات کی تشریح کرنا۔
+-   **عمل کرنا**: تصورات اور زبان کے جواب میں مناسب جسمانی اعمال پیدا کرنا۔
+
+<Admonition type="note" title="زبان کے ماڈلز سے آگے">
+VLA ماڈلز بڑے لسانی ماڈلز (LLMs) کی صلاحیتوں کو وسعت دیتے ہیں جو بصری تصور میں زبان کو بنیاد بناتے ہیں اور جسمانی تعامل کو ممکن بناتے ہیں، متن-ان/متن-آؤٹ سے تصور-ان/عمل-آؤٹ سسٹمز کی طرف بڑھتے ہیں۔
+</Admonition>
+
+## VLA ماڈلز کا فن تعمیر
+
+ایک عام VLA ماڈل فن تعمیر میں کئی باہم مربوط اجزاء شامل ہوتے ہیں:
+
+### 1. وژن انکوڈر
+
+بصری ان پٹ (مثلاً، کیمرے کی تصاویر، گہرائی کے نقشے) پر کارروائی کرتا ہے تاکہ بامعنی خصوصیات کو نکالا جا سکے۔ اس میں اکثر گہرے کنوولوشنل نیورل نیٹ ورکس (CNNs) یا وژن ٹرانسفارمرز شامل ہوتے ہیں۔
+
+### 2. زبان انکوڈر
+
+قدرتی زبان کے کمانڈز یا سوالات پر کارروائی کرتا ہے تاکہ سیمنٹک معنی کو نکالا جا سکے۔ یہ جزو عام طور پر ٹرانسفارمر پر مبنی ماڈلز کا استعمال کرتا ہے، جو LLMs میں پائے جانے والے ماڈلز کی طرح ہوتے ہیں۔
+
+### 3. ملٹی موڈل فیوژن ماڈیول
+
+انکوڈ شدہ بصری اور لسانی خصوصیات کو ایک متحد نمائندگی میں یکجا کرتا ہے۔ یہ ماڈل کو یہ سمجھنے کے لیے ایک اہم قدم ہے کہ وہ کیا دیکھتا ہے اور اسے کیا بتایا جاتا ہے، کے درمیان تعلق کو سمجھ سکے۔
+
+### 4. پالیسی/ایکشن ہیڈ
+
+مربوط ملٹی موڈل نمائندگی کو لیتا ہے اور مناسب روبوٹک اعمال پیدا کرتا ہے۔ اس میں شامل ہو سکتا ہے:
+-   **کم سطح کا کنٹرول**: جوائنٹ کمانڈز، اینڈ-ایفیکٹر پوز۔
+-   **اعلیٰ سطح کی منصوبہ بندی**: ذیلی اہداف یا اعمال کی ترتیب۔
+
+<Admonition type="tip" title="نمائندگی سیکھنا">
+VLA ماڈلز میں اہم اختراع مختلف طریقوں سے بھرپور، مشترکہ نمائندگی سیکھنے کی ان کی صلاحیت ہے، جو کراس-موڈل سمجھ کو ممکن بناتا ہے۔
+</Admonition>
+
+## VLA ماڈلز کی تربیت
+
+VLA ماڈلز کو اکثر بڑے ڈیٹا سیٹس پر تربیت دی جاتی ہے جو بصری مشاہدات کو قدرتی زبان کی تفصیلات اور متعلقہ اعمال کے ساتھ جوڑتے ہیں۔ کمک سیکھنے، تقلید سیکھنے، اور خود نگرانی سیکھنے جیسی تکنیکیں عام طور پر استعمال کی جاتی ہیں۔
+
+### تربیت میں چیلنجز
+
+-   **ڈیٹا کی کمی**: روبوٹکس کے لیے متنوع، اعلیٰ معیار کا ملٹی موڈل ڈیٹا اکٹھا کرنا مشکل ہے۔
+-   **سم-ٹو-ریئل گیپ**: سمولیشن شدہ تربیتی ماحول اور حقیقی دنیا کی پیچیدگیوں کے درمیان کے فرق کو پر کرنا۔
+-   **قابل تعبیر**: یہ سمجھنا کہ یہ پیچیدہ ماڈلز فیصلے کیسے کرتے ہیں۔
+
+## مثال: VLA کے ساتھ روبوٹ کو ہدایت دینا (تصوری)
+
+باورچی خانے کے ماحول میں ایک روبوٹ پر غور کریں۔ ایک VLA ماڈل کے ساتھ، ایک صارف یہ کمانڈ دے سکتا ہے "کاؤنٹر سے سرخ سیب اٹھاؤ اور اسے کٹوری میں ڈال دو۔" روبوٹ پھر یہ کرے گا:
+
+1.  **سمجھنا**: اپنے کیمرے کا استعمال کرتے ہوئے کاؤنٹر پر سرخ سیب اور کٹوری کی شناخت کرے گا۔
+2.  **سمجھنا**: زبان کے کمانڈ کو پارس کرے گا تاکہ اشیاء، مقامات، اور مطلوبہ عمل کی شناخت کی جا سکے۔
+3.  **منصوبہ بندی**: سیب کو پکڑنے اور اسے کٹوری میں رکھنے کے لیے حرکات کی ترتیب پیدا کرے گا۔
+4.  **عمل درآمد**: اپنے روبوٹک بازو کو ہیرا پھیری کرنے کے لیے کنٹرول کرے گا۔
+
+```python
+# Conceptual Python code for a VLA-enabled robot interaction
+
+class VLARobot:
+    def __init__(self):
+        print("VLA Robot Initialized")
+
+    def perceive(self, image_data):
+        # Simulate vision processing to identify objects
+        print("Perceiving environment...")
+        # In a real system, this would involve a vision encoder
+        detected_objects = ["red apple", "green apple", "bowl", "counter"]
+        return detected_objects
+
+    def understand_command(self, natural_language_command):
+        # Simulate language understanding to extract intent
+        print(f"Understanding command: \"{natural_language_command}\"")
+        # In a real system, this would involve a language encoder and multimodal fusion
+        if "pick up red apple" in natural_language_command and "put in bowl" in natural_language_command:
+            return {"action": "pick_and_place", "object": "red apple", "target": "bowl"}
+        return {"action": "unknown"}
+
+    def execute_action(self, action_plan):
+        # Simulate physical action execution
+        if action_plan["action"] == "pick_and_place":
+            print(f"Executing: Pick up {action_plan["object"]} and place in {action_plan["target"]}")
+            # This would involve low-level motor commands in a real robot
+            return "success"
+        print("Action failed or unknown.")
+        return "failure"
+
+# --- Simulation of interaction ---
+robot = VLARobot()
+
+# User provides command
+command = "Pick up the red apple from the counter and put it in the bowl."
+
+# Robot perceives and understands
+visible_objects = robot.perceive(image_data="camera_feed_snapshot.jpg")
+parsed_intent = robot.understand_command(command)
+
+# Robot executes
+if parsed_intent["action"] != "unknown":
+    robot.execute_action(parsed_intent)
+else:
+    print("Could not understand the command.")
+```
+
+## ایپلی کیشنز اور مستقبل کی سمتیں
+
+VLA ماڈلز مستقبل کی روبوٹک ایپلی کیشنز کے لیے اہم ہیں جیسے:
+
+-   **ہیومینائیڈ روبوٹکس**: انسانی شکل کے روبوٹس کو پیچیدہ زبانی ہدایات پر عمل کرنے اور مہارت والے کام انجام دینے کے قابل بنانا۔
+-   **سروس روبوٹکس**: گھروں یا کام کی جگہوں پر بدیہی، قدرتی زبان کے تعامل کے ساتھ مدد کرنے والے روبوٹس۔
+-   **تلاش**: خود مختار روبوٹس جو نئے ماحول کو سمجھتے ہیں اور نتائج کو بتاتے ہیں۔
+
+```mermaid
+graph LR
+    A[Natural Language Command] --> B{Language Encoder}
+    C[Visual Input (Camera)] --> D{Vision Encoder}
+    B -- Fused Representation --> E{Multimodal Fusion}
+    D -- Fused Representation --> E
+    E --> F{Policy/Action Head}
+    F --> G[Robotic Actions]
+```
+
+اگلا باب → [ہیومینائیڈ کنمیٹکس اور بائپیڈل لوکوموشن](/chapters/chapter-6)

@@ -1,0 +1,37 @@
+.floatingButton {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 95px;        /* bigger */
+  height: 95px;       /* bigger */
+  border-radius: 50%;
+  background: transparent;
+  color: #000;
+  font-size: 48px;    /* bigger icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.floatingButton:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.floatingButton span {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 22px;    /* text slightly bigger */
+  letter-spacing: 0.5px;
+}
+
+/* Dark mode */
+[data-theme="dark"] .floatingButton {
+  background: transparent;
+  color: #fff;
+}

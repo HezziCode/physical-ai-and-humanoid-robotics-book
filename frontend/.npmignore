@@ -1,0 +1,91 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report
+.node_modules_src
+.wasm
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.info
+
+# Directory for portable compiled binaries
+.bin
+
+# Coverage directory used by tools like istanbul
+coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# dotenv environment variables file
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Typescript build files
+*.tsbuildinfo
+
+# next.js build output
+.next/
+
+# nuxt.js build output
+.nuxt/
+
+# vuepress build output
+.vuepress/dist
+
+# sveltekit build output
+.svelte-kit/
+.svelte/
+
+# Serverless directories
+.serverless/
+
+# FuseBox build files
+.fusebox/
+
+# Webpack or rollup build files
+dist/
+build/
+
+# Package Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Visual Studio Code
+.vscode/
+
+# Docusaurus
+.docusaurus/
+
+# Existing content from frontend/.npmignore
+node_modules/
+dist/
+build/
+*.log
+.env*
+coverage/

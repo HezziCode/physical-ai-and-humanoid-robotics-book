@@ -1,30 +1,186 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary accent (subtle, not aggressive green) */
+  --ifm-color-primary: #4aa37a;
+  --ifm-color-primary-dark: #3a8562;
+  --ifm-color-primary-light: #67c79b;
+
+  /* Text & backgrounds */
+  --ifm-font-color-base: #2d4a3d;
+  --ifm-background-color: #f5f5e6;
+  --ifm-background-navbar-footer: #e8e5d9;   /* ← Yeh light footer ka base color */
+
+  /* Hover accent */
+  --ifm-color-accent: #4aa37a;
+
+  /* Code highlight */
+  --docusaurus-highlighted-code-line-bg: rgba(74, 163, 122, 0.08);
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Base page colors */
+body, html {
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+/* Navbar & Footer backgrounds */
+.navbar {
+  background: var(--ifm-background-navbar-footer);
+  color: var(--ifm-font-color-base);
+}
+
+/* Footer — Light Theme Mein Same Palette */
+.footer {
+  background: var(--ifm-background-navbar-footer) !important;   /* ← Ab light mein bhi same soft beige */
+  color: var(--ifm-font-color-base) !important;
+  border-top: 3px solid #4aa37a;
+}
+
+.footer__title {
+  color: #2d4a3d !important;
+  font-weight: 600;
+}
+
+.footer__item a,
+.footer__link-item {
+  color: #3a8562 !important;
+  transition: color 0.3s ease;
+}
+
+.footer__item a:hover,
+.footer__link-item:hover {
+  color: #4aa37a !important;
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  color: #3a8562 !important;
+  font-size: 0.9rem;
+}
+
+/* Navbar links */
+.navbar__item {
+  color: var(--ifm-font-color-base);
+}
+
+.navbar__item:hover {
+  color: var(--ifm-color-accent);
+}
+
+/* Buttons */
+.button--primary {
+  background: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+.button--secondary {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  background: var(--ifm-color-primary-light);
+  color: #fff;
+}
+
+/* ---------------- DARK MODE ---------------- */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #000000;
+  --ifm-background-navbar-footer: #0f0f0f;
+
+  /* Pure white text in dark mode */
+  --ifm-font-color-base: #ffffff;
+
+  /* Accent hover (light mint) */
+  --ifm-color-accent: #a4ffbe;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+
+  /* Primary color toned for dark mode */
+  --ifm-color-primary: #a4ffbe;
+  --ifm-color-primary-dark: #8ce6a6;
+}
+
+/* Dark mode footer — ab dark rahega */
+[data-theme="dark"] .footer {
+  background: #0f0f0f !important;
+  color: #ffffff !important;
+  border-top: 3px solid #a4ffbe;
+}
+
+[data-theme="dark"] .footer__title,
+[data-theme="dark"] .footer__item a,
+[data-theme="dark"] .footer__link-item,
+[data-theme="dark"] .footer__copyright {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .footer__item a:hover,
+[data-theme="dark"] .footer__link-item:hover {
+  color: #a4ffbe !important;
+}
+
+/* Navbar in dark mode */
+[data-theme="dark"] .navbar {
+  background: var(--ifm-background-navbar-footer);
+  color: #ffffff;
+}
+
+.navbar__brand {
+  color: #ffffff;
+}
+
+[data-theme="light"] .navbar__brand {
+  color: #2d4a3d;
+}
+
+/* Mobile Responsive (Chatbot) */
+@media (max-width: 768px) {
+  .floatingButton {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 24px;
+  }
+
+  .chatWindow {
+    width: 90vw;
+    height: 80vh;
+    bottom: 10px;
+    right: 5vw;
+    left: 5vw;
+    border-radius: 10px;
+  }
+
+  .chatHeader h3 {
+    font-size: 16px;
+  }
+
+  .closeButton {
+    font-size: 20px;
+  }
+
+  .message {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .chatInput {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .sendButton {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
 }

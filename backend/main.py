@@ -6,15 +6,24 @@ from typing import List, Optional
 from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from datetime import timedelta
+from fastapi.middleware.cors import CORSMiddleware
 
-from services.rag_pipeline import RAGPipeline
+from agent import chatbot_agent, rag_query_async
+from agents import Runner
 from database import SessionLocal, User, UserCreate, UserInDB, Token, create_db_tables
 from security import get_password_hash, verify_password, create_access_token
 from config import settings
 
 app = FastAPI()
 
-rag_pipeline = RAGPipeline()
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # In production, change this to your frontend's domain
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
 
@@ -32,25 +41,25 @@ def get_db():
         db.close()
 
 # Define request and response models
-class RagQueryRequest(BaseModel):
+class QueryRequest(BaseModel):
     query: str
-    selected_text: Optional[str] = None
-
-class RagQueryResponse(BaseModel):
-    response: str
-    source_documents: List[str] = []
+    context: Optional[str] = ""
 
 @app.get("/")
 async def read_root():
     return {"message": "Welcome to Physical AI & Humanoid Robotics Backend!"}
 
-@app.post("/rag/query", response_model=RagQueryResponse)
-async def rag_query(request: RagQueryRequest):
-    try:
-        answer, source_documents = await rag_pipeline.query_rag(request.query, request.selected_text)
-        return RagQueryResponse(response=answer, source_documents=source_documents)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+@app.post("/rag/query")
+async def rag_query(request: QueryRequest):
+    query = request.query
+    context = request.context or ""
+    if context.strip():
+        prompt = f"Answer ONLY from this context:\n\n{context}\n\nQuestion: {query}"
+    else:
+        prompt = query
+
+    result = await Runner.run(chatbot_agent, prompt)
+    return {"answer": result.final_output}
 
 # User registration endpoint
 @app.post("/auth/signup", response_model=UserInDB, status_code=status.HTTP_201_CREATED)

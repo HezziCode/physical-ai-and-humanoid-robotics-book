@@ -12,6 +12,7 @@ dist/
 build/
 *.log
 .env*
+package-lock.json
 
 # Universal
 .DS_Store

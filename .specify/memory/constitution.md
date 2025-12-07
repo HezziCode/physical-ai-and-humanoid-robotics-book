@@ -1,55 +1,63 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI & Humanoid Robotics Book Hackathon Constitution
 
-## Core Principles
+## Project Name
+Physical AI & Humanoid Robotics – An AI-Native Textbook
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+## Core Vision & Principles
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### I. The First True AI-Native Textbook
+This is not a static PDF or website — it is the world's first fully interactive, continuously improving, AI-powered textbook on Physical AI and Humanoid Robotics. Every reader interacts with an intelligent RAG agent that knows the entire book.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Zero Authentication, Maximum Accessibility
+No sign-up, no login, no barriers. Knowledge must be instantly available to every student, researcher, and builder in Pakistan and worldwide.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### III. One-Click Global Language Toggle
+Full bidirectional English ↔ Urdu support. A single button in the navbar instantly translates the entire book (all 10 chapters) while preserving technical accuracy (ROS 2 → روز ٹو, Isaac Sim → ایسیک سم, etc.).
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### IV. RAG Chatbot on Every Page with Selected-Text Answering
+A persistent intelligent assistant lives on every chapter. Users can:
+- Ask any question about the book
+- Select any paragraph and ask "Explain this" → receives context-aware answer instantly
 
-### [PRINCIPLE_6_NAME]
+### V. Built for Speed, Scale & Judges
+- Docusaurus 3 + TypeScript + MDX
+- Deployed on GitHub Pages (zero cost, globally fast)
+- Dark/Light mode + clean professional design
+- Mobile-responsive, zero broken links
 
+## Mandatory Deliverables (Completed)
+- check Docusaurus 3 site live on GitHub Pages
+- check All 10 chapters in MDX with diagrams, code, warnings
+- check Global Urdu/English toggle (one click)
+- check RAG chatbot with selected-text Q&A capability
+- check FastAPI + Qdrant backend (or demo mode)
+- check Under 90-second demo video ready
 
-[PRINCIPLE__DESCRIPTION]
+## Bonus Achievements (Delivered)
+- Global dark/light mode toggle
+- Full Urdu technical translation with correct terminology
+- Selected-text → instant question capability (killer feature)
+- Clean, authentication-free experience
+- Professional navbar: [اردو/EN] • Dark/Light • GitHub
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Book Chapters (Final Structure)
+1. Introduction to Physical AI and Embodied Intelligence  
+2. The Robotic Nervous System – ROS 2 Deep Dive  
+3. Digital Twins – Gazebo, Unity and Physics Simulation  
+4. NVIDIA Isaac Platform – Isaac Sim & Isaac ROS  
+5. Vision-Language-Action (VLA) Models  
+6. Bipedal Locomotion and Balance Control  
+7. Manipulation and Dexterous Hands  
+8. Conversational Robotics – Voice to Action  
+9. Hardware Requirements and Lab Setup Guide (2025–2026)  
+10. Capstone Project – Autonomous Humanoid with Natural Language Control
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Success Metrics (All Met)
+- check Live URL before deadline: https://hezzicode.github.io/physical-ai-and-humanoid-robotics-book/
+- check Zero authentication, zero friction
+- check Works perfectly on mobile + desktop
+- check Urdu toggle changes entire site instantly
+- check RAG bot answers from selected text
+- check Clean, fast, professional look
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
-
-## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
-
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 05 Dec 2025 | **Status**: LIVE & COMPLETE

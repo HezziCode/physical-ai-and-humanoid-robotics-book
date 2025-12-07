@@ -1,0 +1,22 @@
+{
+  "theme.doc.pagination.previousPage": {
+    "message": "پچھلا",
+    "description": "The label for the previous page item"
+  },
+  "theme.doc.pagination.nextPage": {
+    "message": "اگلا",
+    "description": "The label for the next page item"
+  },
+  "homepage.hero.title": {
+    "message": "فزیکل اے آئی اور ہیومینائیڈ روبوٹکس",
+    "description": "Homepage hero title"
+  },
+  "homepage.hero.subtitle": {
+    "message": "ڈیجیٹل ذہانت سے مجسم ایجنٹس تک",
+    "description": "Homepage hero subtitle"
+  },
+  "homepage.start_learning": {
+    "message": "سیکھنا شروع کریں ←",
+    "description": "Homepage start learning button"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "theme.navbar.link.title": {
+    "message": "اے آئی بک",
+    "description": "Navbar item with label AI Book"
+  },
+  "theme.navbar.link.label.Chapters": {
+    "message": "ابواب",
+    "description": "Navbar item with label Chapters"
+  },
+  "theme.docs.sidebar.link.skipToContent": {
+    "message": "مواد پر جائیں",
+    "description": "The link to skip to main content"
+  },
+  "theme.navbar.item.localeDropdown.basic.label.en": {
+    "message": "English",
+    "description": "The label for the English locale in the locale dropdown"
+  },
+  "theme.navbar.item.localeDropdown.basic.label.ur": {
+    "message": "اردو",
+    "description": "The label for the Urdu locale in the locale dropdown"
+  }
+}

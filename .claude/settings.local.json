@@ -25,7 +25,9 @@
       "Bash(netstat:*)",
       "Bash(findstr:*)",
       "Bash(npx kill-port:*)",
-      "WebSearch"
+      "WebSearch",
+      "mcp__context7__get-library-docs",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []
