@@ -17,4 +17,5 @@ dependencies = [
     "qdrant-client",
     "sqlalchemy==1.4.47",
     "uvicorn==0.23.2",
+    "google-generativeai",
 ]
