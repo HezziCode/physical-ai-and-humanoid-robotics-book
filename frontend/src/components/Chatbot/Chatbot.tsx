@@ -26,7 +26,8 @@ export default function Chatbot() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/rag/query', {
+      // LIVE BACKEND URL — DEPLOYED ON RENDER
+      const response = await fetch('https://physical-ai-robotics-book-backend.onrender.com/rag/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
