@@ -15,10 +15,10 @@ future: {
 
 
   // Set the production url of your site here
-  url: 'https://HezziCode.github.io',
+  url: 'https://humanoid-intelligence.vercel.app',  // Your Vercel domain
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-ai-and-humanoid-robotics-book/',   // ya '/hackathon-book/'
+  // For Vercel deployment, use '/' for root deployment
+  baseUrl: '/',   // Changed from '/physical-ai-and-humanoid-robotics-book/' for Vercel deployment
   organizationName: 'HezziCode',
   projectName: 'physical-ai-and-humanoid-robotics-book',
   trailingSlash: false,
