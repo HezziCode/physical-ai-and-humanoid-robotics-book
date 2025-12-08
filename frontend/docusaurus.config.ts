@@ -22,6 +22,8 @@ future: {
   organizationName: 'HezziCode',
   projectName: 'physical-ai-and-humanoid-robotics-book',
   trailingSlash: false,
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -100,9 +102,9 @@ footer: {
     {
       title: 'Learn',
       items: [
-        { label: 'Start Your Journey', to: '/physical-ai-and-humanoid-robotics-book/docs' },
-        { label: 'Full Curriculum', to: '/physical-ai-and-humanoid-robotics-book/docs' },
-        { label: 'Learning Path', to: '/physical-ai-and-humanoid-robotics-book/docs' },
+        { label: 'Start Your Journey', to: '/docs' },
+        { label: 'Full Curriculum', to: '/docs' },
+        { label: 'Learning Path', to: '/docs' },
       ],
     },
     {
