@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "agents",
+    "tensorflow<2.0,>=1.15",
     "fastapi>=0.122.0",
     "httpx",
     "litellm",
