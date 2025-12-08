@@ -19,7 +19,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://your-frontend-domain.vercel.app"],  # Update to your deployed frontend URL
+    allow_origins=["https://humanoid-intelligence.vercel.app"],  # Your deployed frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
